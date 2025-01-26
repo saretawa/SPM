@@ -1,6 +1,6 @@
 import socket
 
-class MultiConnectionServer:
+class MultiConnectionServerSocket:
     def __init__(self, host="127.0.0.1", port=555, max_connections=5):
         self.host = host
         self.port = port
@@ -42,5 +42,5 @@ class MultiConnectionServer:
         client_socket.close()
 
 if __name__ == "__main__":
-    server = MultiConnectionServer()
+    server = MultiConnectionServerSocket()
     server.start_server_socket()
