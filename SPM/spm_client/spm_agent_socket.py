@@ -1,6 +1,6 @@
 import socket
 
-class Client:
+class Client_Socket:
     def __init__(self, server_ip="127.0.0.1", server_port=555):
         self.server_ip = server_ip
         self.server_port = server_port
@@ -41,5 +41,5 @@ class Client:
 
 
 def start_socket():
-    client = Client()
+    client = Client_Socket()
     client.start_client_socket()
